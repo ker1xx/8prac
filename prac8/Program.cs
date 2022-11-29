@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            mainfile.lol();
+            mainfile.writetext();
+            mainfile.checkinput();
         }
     }
 }

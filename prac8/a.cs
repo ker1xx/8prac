@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace prac8
 {
-    internal class a
+    internal static class a
     {
+        static Random rand = new();
+        static int number = rand.Next(0, 11);
+        public static string currentstroka = File.ReadLines("C:\\Users\\я\\Desktop\\texts.txt").ElementAt(number);
+        public static int mistakes = 0;
+        public static ConsoleKeyInfo key;
     }
 }
